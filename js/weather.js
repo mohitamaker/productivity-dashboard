@@ -1,4 +1,4 @@
-let API_KEY = "4a3b32acd988245a763029e33aa39acb";
+let API_KEY = "YOUR_API_KEY";
 let weathersearch = document.querySelector(".weather-search");
 let weatherSearchBtn = document.querySelector("#weatherSearchBtn");
 let searchCity = document.querySelector("#searchCity");
