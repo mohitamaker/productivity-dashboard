@@ -1,4 +1,4 @@
-let API_KEY = "YOUR_API_KEY";
+let API_KEY = "0co8nJX2b2czCq2qFX6b2EWj41HRreLoAVa5aIBd";
 
 let url="https://api.api-ninjas.com/v2/randomquotes?categories=success,wisdom";
 let quotecard = document.querySelector(".quote-card");
