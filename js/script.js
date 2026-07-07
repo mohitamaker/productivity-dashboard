@@ -56,4 +56,3 @@ import "./timer.js";
 import "./goals.js";
 import "./weather.js";
 import "./motivation.js";
-import "./utils.js";
