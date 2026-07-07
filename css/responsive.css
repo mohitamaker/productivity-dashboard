@@ -1,0 +1,273 @@
+/* ==========================================
+            LARGE TABLETS
+========================================== */
+
+@media (max-width:1200px){
+
+    .cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ==========================================
+            TABLETS
+========================================== */
+
+@media (max-width:992px){
+
+    .sidebar{
+
+        width:90px;
+
+        padding:1.5rem 1rem;
+
+    }
+
+    .logo h2{
+
+        display:none;
+
+    }
+
+    .sidebar li span{
+
+        display:none;
+
+    }
+
+    .sidebar li{
+
+        justify-content:center;
+
+        padding:15px;
+
+    }
+
+    .sidebar li i{
+
+        margin:0;
+
+    }
+
+    .main-content{
+
+        margin-left:90px;
+
+        padding:2rem;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:1rem;
+
+    }
+
+    .theme-btn{
+
+        align-self:flex-end;
+
+    }
+
+}
+
+
+/* ==========================================
+            MOBILE DEVICES
+========================================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+        border-right:none;
+
+        border-bottom:1px solid var(--border);
+
+        padding:1rem;
+
+    }
+
+    .logo{
+
+        justify-content:center;
+
+        margin-bottom:1rem;
+
+    }
+
+    .logo h2{
+
+        display:block;
+
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        justify-content:flex-start;
+
+        gap:.8rem;
+
+        overflow-x:auto;
+
+        padding-bottom:.5rem;
+        flex-direction: row;
+
+    }
+
+    .sidebar li{
+
+        min-width:70px;
+
+        flex-direction:column;
+
+        gap:.5rem;
+
+        padding:12px;
+
+    }
+
+    .sidebar li span{
+
+        display:block;
+
+        font-size:.75rem;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:1.5rem;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .add-task,
+    .plan-form,
+    .goal-form,
+    .weather-search{
+
+        flex-direction:column;
+
+        display:flex;
+
+    }
+
+    .todo-header,
+    .planner-header,
+    .goal-header,
+    .weather-header,
+    .timer-header,
+    .motivation-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.8rem;
+
+    }
+
+    .timer-circle{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+    .timer-circle h1{
+
+        font-size:3rem;
+
+    }
+
+    .timer-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .timer-buttons button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ==========================================
+            SMALL MOBILES
+========================================== */
+
+@media (max-width:480px){
+
+    .main-content{
+
+        padding:1rem;
+
+    }
+
+    .welcome-card{
+
+        padding:1.5rem;
+
+    }
+
+    .welcome-card h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .topbar h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .card{
+
+        padding:1.5rem;
+
+    }
+
+    .quote-card{
+
+        padding:2rem;
+
+    }
+
+}

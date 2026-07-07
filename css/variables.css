@@ -1,0 +1,115 @@
+:root {
+
+    /* COLORS */
+    --primary: #b9a3ff;
+    --primary-light: #e6deff;
+
+    --secondary: #6c5ce7;
+    --secondary-light: #ede9ff;
+
+    --success: #2ecc71;
+    --success-light: #e8f9f0;
+
+    --danger: #ff6b6b;
+    --danger-light: #ffe9e9;
+
+    --warning: #feca57;
+    --warning-light: #fff6dd;
+
+    --purple: #a66cff;
+    --purple-light: #f1e8ff;
+
+    --pink: #ff9ff3;
+    --pink-light: #ffe6fb;
+
+    --cyan: #48dbfb;
+    --cyan-light: #e3faff;
+
+    /* BACKGROUND SYSTEM */
+    --background: #f7f3ff;
+    --surface: #ffffff;
+    --surface-hover: #f3f0ff;
+
+    /* TEXT */
+    --text-dark: #1e1b2e;
+    --text: #2f2b3a;
+    --text-light: #7a7785;
+    --text-white: #ffffff;
+
+    /* BORDER */
+    --border: #e8e3f7;
+
+    /* SHADOWS */
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.06);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+
+    /* RADIUS */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 28px;
+    --radius-round: 50%;
+
+    /* TRANSITIONS */
+    --transition-fast:0.2s ease;
+    --transition:0.3s ease;
+    --transition-slow: all 0.6s ease;
+
+    /* SPACING */
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 15px;
+    --space-lg: 25px;
+    --space-xl: 40px;
+
+    /* LAYOUT */
+    --sidebar-width: 260px;
+    --header-height: 70px;
+}
+
+[data-theme="dark"] {
+
+    --primary: #8f7cff;
+    --primary-light: #2a2440;
+
+    --secondary: #7b6cff;
+    --secondary-light: #1f1b33;
+
+    --success: #2ecc71;
+    --success-light: #163024;
+
+    --danger: #ff6b6b;
+    --danger-light: #2a1a1a;
+
+    --warning: #feca57;
+    --warning-light: #2a2415;
+
+    --purple: #9b7bff;
+    --purple-light: #241d3a;
+
+    --pink: #ff7ad9;
+    --pink-light: #2a1a26;
+
+    --cyan: #4fd1ff;
+    --cyan-light: #15242a;
+
+    /* BACKGROUND (THIS IS WHERE DARK MAGIC HAPPENS) */
+    --background: #0f111a;
+    --surface: #171a26;
+    --surface-hover: #1f2233;
+
+    /* TEXT */
+    --text-dark: #f2f2f2;
+    --text: #e0e0f0;
+    --text-light: #a1a1b3;
+    --text-white: #ffffff;
+
+    /* BORDER */
+    --border: #2a2a3a;
+
+    /* SHADOWS */
+    --shadow-sm: 0 6px 20px rgba(0,0,0,0.4);
+    --shadow-md: 0 12px 30px rgba(0,0,0,0.5);
+    --shadow-lg: 0 25px 60px rgba(0,0,0,0.6);
+}

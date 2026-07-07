@@ -1,0 +1,140 @@
+/* ==========================================
+                GOALS PAGE
+========================================== */
+
+#goal-page{
+
+    display:none;
+
+}
+
+
+/* ==========================================
+            GOAL CONTAINER
+========================================== */
+
+.goal-container{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-xl);
+
+    padding:2rem;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* ==========================================
+            GOAL HEADER
+========================================== */
+
+.goal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:2rem;
+
+}
+
+.goal-header h2{
+
+    font-size:2rem;
+
+}
+
+
+/* ==========================================
+            GOAL FORM
+========================================== */
+
+.goal-form{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-bottom:2rem;
+
+}
+
+.goal-form input{
+
+    flex:1;
+
+    padding:16px 20px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    background:var(--background);
+
+}
+
+.goal-form button{
+
+    padding:16px 24px;
+
+    background:var(--success);
+
+    color:white;
+
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+}
+
+.goal-form button:hover{
+
+    background:#2db775;
+
+}
+
+
+/* ==========================================
+            GOAL LIST
+========================================== */
+
+.goal-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+}
+
+
+/* ==========================================
+            GOAL CARD
+========================================== */
+
+.goal-card{
+
+    background:var(--background);
+
+    border-left:6px solid var(--success);
+
+    padding:20px;
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.goal-card:hover{
+
+    transform:translateY(-3px);
+
+}

@@ -1,0 +1,104 @@
+/* ==========================================
+                WEATHER PAGE
+========================================== */
+
+#weather-page{
+
+    display:none;
+
+}
+
+
+/* ==========================================
+            WEATHER CONTAINER
+========================================== */
+
+.weather-container{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-xl);
+
+    padding:2rem;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* ==========================================
+            WEATHER HEADER
+========================================== */
+
+.weather-header{
+
+    margin-bottom:2rem;
+
+}
+
+.weather-header h2{
+
+    font-size:2rem;
+
+}
+
+
+/* ==========================================
+            SEARCH
+========================================== */
+
+.weather-search{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-bottom:2rem;
+
+}
+
+.weather-search input{
+
+    flex:1;
+
+    padding:16px;
+
+    border-radius:var(--radius-md);
+
+    border:1px solid var(--border);
+
+    background:var(--background);
+    color:var(--text-dark);
+
+}
+
+.weather-search button{
+
+    padding:16px 28px;
+
+    background:var(--cyan);
+
+    color:white;
+
+    border-radius:var(--radius-md);
+
+}
+
+
+/* ==========================================
+            WEATHER CARD
+========================================== */
+
+.weather-card{
+
+    background:var(--cyan-light);
+
+    border-radius:var(--radius-xl);
+
+    padding:3rem;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+}

@@ -1,0 +1,152 @@
+/* ==========================================
+                TIMER PAGE
+========================================== */
+
+#timer-page{
+
+    display:none;
+
+}
+
+
+/* ==========================================
+            TIMER CONTAINER
+========================================== */
+
+.timer-container{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-xl);
+
+    padding:2rem;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* ==========================================
+            TIMER HEADER
+========================================== */
+
+.timer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:2rem;
+
+}
+
+.timer-header h2{
+
+    font-size:2rem;
+
+}
+
+.timer-header p{
+
+    margin-top:.4rem;
+
+}
+
+
+/* ==========================================
+            TIMER CARD
+========================================== */
+
+.timer-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:2rem;
+
+}
+
+
+/* ==========================================
+            TIMER CIRCLE
+========================================== */
+@property --angle{
+    syntax:"<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.timer-circle{
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    /* background:var(--danger-light); */
+    background:linear-gradient(var(--danger-light)) padding-box,
+    conic-gradient(from var(--angle),var(--danger),transparent,transparent) border-box;
+
+    border:12px solid transparent;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:var(--shadow-md);
+    transition:all 0.2s linear;
+
+}
+
+.timer-circle h1{
+
+    font-size:4rem;
+
+    color:var(--danger);
+
+}
+
+
+/* ==========================================
+            TIMER BUTTONS
+========================================== */
+
+.timer-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+}
+
+.timer-buttons button{
+
+    padding:15px 28px;
+
+    border-radius:var(--radius-md);
+
+    background:var(--danger);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.timer-buttons button:hover{
+
+    background:#e14d4d;
+
+}

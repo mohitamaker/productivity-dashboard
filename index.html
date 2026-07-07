@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="ri-flashlight-fill"></i>
+                <h2>FocusFlow</h2>
+            </div>
+            <nav>
+                <ul class="navigate">
+                    <li class="active" id="dashboardBtn">
+                        <i class="ri-home-5-line"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li id="todoBtn">
+                        <i class="ri-task-line"></i>
+                        <span>To-Do</span>
+                    </li>
+                    <li id="plannerBtn">
+                        <i class="ri-calendar-line"></i>
+                        <span>Planner</span>
+                    </li>
+                    <li id="timerBtn">
+                        <i class="ri-timer-line"></i>
+                        <span>Pomodoro</span>
+                    </li>
+                    <li id="goalBtn">
+                        <i class="ri-flag-line"></i>
+                        <span>Goals</span>
+                    </li>
+                    <li id="weatherBtn">
+                        <i class="ri-sun-cloudy-line"></i>
+                        <span>Weather</span>
+                    </li>
+                    <li id="motivationBtn">
+                        <i class="ri-lightbulb-line"></i>
+                        <span>Motivation</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <h1>Productivity Dashboard</h1>
+                    <p>Make today count.</p>
+                </div>
+                <button class="theme-btn"><i class="ri-moon-line"></i>Theme</button>
+            </header>
+
+            <section id="dashboard-page">
+                <div class="welcome-card">
+                    <h2 id="wlcmMsg">Good Morning 👋</h2>
+                    <p>Small progress every day leads to big results.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card" id="todoCard">
+                        <div class="icon orange">
+                            <i class="ri-task-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>To-Do List</h3>
+                            <p>Organize your daily tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="plannerCard">
+                        <div class="icon blue">
+                            <i class="ri-calendar-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Planner</h3>
+                            <p>Plan your day effectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="timerCard">
+                        <div class="icon red">
+                            <i class="ri-timer-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pomodoro</h3>
+                            <p>Stay focused while working.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="goalCard">
+                        <div class="icon green">
+                            <i class="ri-flag-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Goals</h3>
+                            <p>Track your achievements.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="weatherCard">
+                        <div class="icon cyan">
+                            <i class="ri-sun-cloudy-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Weather</h3>
+                            <p>View today's forecast.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" id="motivationCard">
+                        <div class="icon pink">
+                            <i class="ri-lightbulb-line"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Motivation</h3>
+                            <p>Get inspired every day.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- pages -->
+            <section id="todo-page" class="page">
+                <div class="todo-container">
+                    <div class="todo-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>To-Do List</h2>
+                            <p>Organize your daily tasks.</p>
+                        </div>
+                    </div>
+                    <div class="add-task">
+                        <input type="text" id="taskInput" placeholder="Enter your task">
+                        <button id="addTaskBtn"><i class="ri-add-line"></i>Add Task</button>
+                    </div>
+                    <div class="filters">
+                        <button id="showAll">All</button>
+                        <button id="showCompleted">Completed</button>
+                        <button id="showPending">Pending</button>
+                    </div>
+                    <div class="task-list">
+                        <!-- <div class="task">
+                            <div class="task-left">
+                                <input type="checkbox" class="task-check">
+                                <p class="task-title">Mohita</p>
+                            </div>
+                            <div id="completed">Completed</div>
+
+                            <div class="task-actions">
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="planner-page" class="page">
+                <div class="planner-container">
+                    <div class="planner-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>Daily Planner</h2>
+                            <p>Plan your day efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="date-box">
+                        <h3 id="day">Monday</h3>
+                        <span id="date">7 July 2026</span>
+                    </div>
+                    <div class="plan-form">
+                        <input type="text" placeholder="Activity" id="activity">
+                        <input type="time" id="time">
+                        <button id="addPlan">Add</button>
+                    </div>
+                    <div class="plan-list">
+                    </div>
+                </div>
+            </section>
+
+            <section id="timer-page" class="page">
+                <div class="timer-container">
+                    <div class="timer-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>Pomodoro Timer</h2>
+                            <p>Stay focused and productive.</p>
+                        </div>
+                    </div>
+                    <div class="timer-card">
+                        <div class="timer-circle">
+                            <h1 id="timer">25:00</h1>
+                        </div>
+                        <div class="timer-buttons">
+                            <button id="startBtn">Start</button>
+                            <button id="pauseBtn">Pause</button>
+                            <button id="resetBtn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="goal-page" class="page">
+                <div class="goal-container">
+                    <div class="goal-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>Goals</h2>
+                            <p>Track your personal goals.</p>
+                        </div>
+                    </div>
+                    <div class="goal-form">
+                        <input type="text" placeholder="Enter Goal" id="goalText">
+                        <button id="addGoal">Add Goal</button>
+                    </div>
+                    <div class="goal-list">
+                    </div>
+                </div>
+            </section>
+
+            <section id="weather-page" class="page">
+                <div class="weather-container">
+                    <div class="weather-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>Weather</h2>
+                            <p>Search your city.</p>
+                        </div>
+                    </div>
+                    <div class="weather-search">
+                        <input type="text" placeholder="Search city" id="searchCity">
+                        <button id="weatherSearchBtn">Search</button>
+                    </div>
+                    <div class="weather-card">
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="motivation-page" class="page">
+                <div class="motivation-container">
+                    <div class="motivation-header">
+                        <button class="back-btn">Back<i class="ri-arrow-left-line"></i></button>
+                        <div>
+                            <h2>Daily Motivation</h2>
+                            <p>Stay inspired every day.</p>
+                        </div>
+                    </div>
+                    <div class="quote-card">
+                        <h2 id="quote">Your quote appears here.</h2>
+                        <p id="author">Author</p>
+                    </div>
+                    <div class="quote-buttons">
+                        <button id="newQuote">New Quote</button>
+                        <button id="copyQuote">Copy</button>
+                        <div class="copy-toast" id="copyToast">Copied to clipboard!</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
